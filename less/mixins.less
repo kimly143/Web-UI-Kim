@@ -1,0 +1,32 @@
+
+// navigation
+.external{
+    width: 100vw;
+    .dottedBorder();
+}
+
+.nav{
+    .flexRowNowrap();
+    justify-content: baseline;
+    //max-width: 800px;
+    width: 100%;
+    margin: 5vh auto 0 auto;
+    height: 8vh;
+    .logo{
+        flex-grow: 2;
+        padding: 0 0 5vh 0;
+    }
+
+    .anchors{
+        //flex-grow: 1;
+        justify-items: flex-end;
+        line-height: 4em;
+        .flexRowNowrap();
+        a {
+            flex-grow: 1;
+            text-align: right;
+            font-size: 1.5em;
+            color: black;
+        }
+    }
+}

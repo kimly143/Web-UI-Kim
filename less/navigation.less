@@ -1,0 +1,66 @@
+// Navigation Styles here
+.flexRowNowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.funFont{
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.flexColWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.dottedBorder{
+    border-bottom: 2px dashed #C0C0C0;
+}
+.external{
+    width: 100vw;
+    .dottedBorder();
+}
+.nav{
+    .flexRowNowrap();
+    // justify-content: baseline;
+    max-width: 900px;
+    width: 100%;
+    margin: 5vh auto 0 auto;
+    height: 8vh;
+    .logo{
+        flex-grow: 3;
+        padding: 0 0 5vh 0;
+    }
+
+    .anchors{
+        flex-grow: 1;
+        justify-items: flex-end;
+        line-height: 4em;
+        .flexRowNowrap();
+        a {
+            flex-grow: 1;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: black;
+        }
+    }
+}
+
+@media @mobile{
+    .nav{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+        .flexRowNowrap();
+        .logo{
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            padding: 0 0;
+        }
+        .anchors{
+            flex-grow: 1;
+            width: 100%;  
+            text-align: center;;    
+        }
+    }
+}
