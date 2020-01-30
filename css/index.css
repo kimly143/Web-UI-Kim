@@ -1,11 +1,11 @@
 .external {
   width: 100vw;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: baseline;
+  max-width: 800px;
   width: 100%;
   margin: 5vh auto 0 auto;
   height: 8vh;
@@ -15,6 +15,7 @@
   padding: 0 0 5vh 0;
 }
 .nav .anchors {
+  flex-grow: 1;
   justify-items: flex-end;
   line-height: 4em;
   display: flex;
@@ -22,7 +23,7 @@
 }
 .nav .anchors a {
   flex-grow: 1;
-  text-align: right;
+  text-decoration: none;
   font-size: 1.5em;
   color: black;
 }
@@ -201,21 +202,13 @@ img {
   display: flex;
   flex-wrap: nowrap;
 }
-.funFont {
-  color: black;
-  font-family: 'Indie Flower', cursive;
-}
 .flexColWrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.dottedBorder {
-  border-bottom: 2px dashed #C0C0C0;
-}
 .external {
   width: 100vw;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .nav {
   display: flex;
@@ -272,6 +265,33 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.external {
+  width: 100vw;
+}
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: baseline;
+  width: 100%;
+  margin: 5vh auto 0 auto;
+  height: 8vh;
+}
+.nav .logo {
+  flex-grow: 2;
+  padding: 0 0 5vh 0;
+}
+.nav .anchors {
+  justify-items: flex-end;
+  line-height: 4em;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.nav .anchors a {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 1.5em;
+  color: black;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -303,11 +323,11 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.home .content-volunteer {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.home .content-volunteer img {
   border-radius: 10px;
 }
 .home .content-pick {
@@ -421,15 +441,15 @@ button {
     width: 94vw;
     margin: 0 5vw;
   }
-  .home .content-destination {
+  .home .content-volunteer {
     width: 90vw;
     margin: 2vh 5vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .home .content-destination .text-content,
-  .home .content-destination .img-content {
+  .home .content-volunteer .text-content,
+  .home .content-volunteer .img-content {
     width: 100%;
     margin: 0 auto;
   }
