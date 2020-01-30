@@ -257,11 +257,11 @@ img {
 }
 .footer {
   width: 100%;
-  background: #ffccbc;
+  background: #de9151;
 }
 .footer p {
   text-align: center;
-  color: #212529;
+  color: white;
   font-size: 1.6rem;
   padding: 20px;
 }
