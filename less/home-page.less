@@ -5,7 +5,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
     
     .text-content {
       width: 48%;
@@ -24,7 +26,6 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
 
     .text-content {
       padding-left: 1%;
@@ -48,12 +49,11 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
     background-color: @persian-orange;
     .flexbox {
-      width: 30%;
+      //width: 30%;
       padding: 0 20px 30px 20px;
       text-align: center;
     }
@@ -86,7 +86,6 @@
   flex-wrap: wrap;
 }
 header{
-  .dottedBorder();
   display: flex;
   flex-wrap: wrap;
   //max-width: 900px;
@@ -136,7 +135,6 @@ button{
     margin: 0 auto;
     .external{
       width: 100%;
-      .dottedBorder();
     }
   }
   header{
@@ -154,6 +152,9 @@ button{
 }
 
   .home .content-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100vw;
     margin: 2vh auto;
     .flexColNowrap();
@@ -166,7 +167,6 @@ button{
   .home .inverse-content{
     width: 100vw;
     margin: vh auto;
-    .dottedBorder();
     .flexColReverseNowrap();
     .text-content, .img-content{
       width: 94vw;
