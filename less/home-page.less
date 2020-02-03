@@ -122,14 +122,19 @@ header{
 }
 
 button{
-  background:@persian-orange;
-  opacity: 0.8;
-  width: 150px;
-  height: 2.5em;
-  font-size: 1.2em;
-  color: @teal-green;
-  border-radius: 10px;
+  background:black;
+  opacity: 0.6;
+  width: 120px;
+  height: 2em;
+  font-size: 1em;
+  color: @white;
+  //border-radius: 10px;
+  transition: 0.3s;
 }
+button:hover{
+  opacity: 1;
+}
+
 
 //**************************mobile******************
 @media @mobile{
@@ -155,6 +160,9 @@ button{
 }  
 .container .home{
   width: 100%;
+  .content-pick{
+  display: none;
+}
 }
 
   .home .content-section{
