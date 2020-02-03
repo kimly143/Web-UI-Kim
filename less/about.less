@@ -1,3 +1,4 @@
+
 .body-about {
     height: 100vh;
     .flexCol();
@@ -22,17 +23,19 @@
     color: white;
 
     .mid2{
+        font-size:0.7rem;
+
+        background: black;
+        opacity: 0.9;
         flex-grow: 2;
         .flexCol();
-        padding: 3vh 10vw;
+        padding: 3vh 10vw 3vh 15vw;;
         width: 100vw;
-        background:black;
         font-size: 0.8rem;
         h1,h2{
             font-weight:200;
         }
         .full-size-blocks{
-            opacity: 0.2;
             padding-top: 2vh;
         }
         button{
@@ -42,49 +45,104 @@
         width: 20vw;
         height: 3rem;
         }
+        .team{
+            background: @outerspace;
+            opacity:  0.9;
+            padding-top: 2vh;
+            color: white;
+            text-shadow: 1px 1px black;
+            .meet{
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .member{
+                background: unset;
+                .flexRowNowrap();
+                align-items: space-around;
+                padding: 0 2vw 2vh 0;
+                img {
+                    width: 12vw;
+                    margin: 1vh 2vw 1VH 0;
+                }
+                .bio {
+                    margin: 1vh 2vw 1vh 3vw; 
+                }
+            }
+            .member2{
+                background: unset;
+                .flexRowNowrap();
+                padding: 0 2vw 2vh 0;
+                img {
+                    width: 12vw;
+                    margin: 1vh 0 1vh 3vw;
+                }
+                .bio {
+                    margin: 1vh 2vw 1vh 3vw; 
+                }
+            }
+        }
     }
-    background-image: url(../img/about-bg.jpg);
+    
+    background-image: url(../img/boy-english.jpg);
+    background-repeat: repeat-y;
     }
+@media @tablet, @mobile{
+    .team .member, .team .member2 {
+        img{
+            display: none;
+        }
+    } 
+}
 
+
+
+
+
+
+
+
+
+//old style from index
     .external2{
     width: 100vw;
-    border-bottom: 1px solid @persian-orange ;
+    //border-bottom: 1px solid @persian-orange ;
     padding-top: 2.5em;
     }
 
-    .nav2{
-    .flexRowNowrap();
-    max-width: 70vw; //new
-    width: 100%;
-    margin: 0 auto;
-    height: 7vh;
-    .logo{
-        flex-grow: 3;
-        padding: 0 0 5vh 0;
-    }
 
-    .anchors{
-        flex-grow: 1;
-        justify-items: flex-end;
-        line-height: 4em;
+    .nav2{
         .flexRowNowrap();
-        a {
+        max-width: 80vw; //new
+        margin: 0 auto;
+        height: 7vh;
+        .logo{
             flex-grow: 1;
-            text-decoration: none;
-            text-align: right;
-            font-size: 1.5em;
-            color: white;
-            font-weight: 300;
+            width: 20vw;
+            //padding: 0 0 5vh 0;
+        }
+
+        .anchors{
+            flex-grow: 1;
+            //justify-items: flex-end;
+            line-height: 4em;
+            .flexRowNowrap();
+            a {
+                flex-grow: 1;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.5em;
+                color: white;
+                font-weight: 300;
+            }
         }
     }
-}
 //**************************mobile******************
 @media @mobile{
 body{
     width: 100vw;
 }
 
-.body-vol{
+.body-about{
     .mid{
     //border: 2px dotted red;
     max-width: 80vw;

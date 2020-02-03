@@ -238,13 +238,12 @@ img {
 .nav {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 900px;
-  width: 100%;
+  width: 90vw;
   margin: 0 auto;
   height: 8vh;
 }
 .nav .logo {
-  flex-grow: 3;
+  flex-grow: 2;
   padding: 0 0 5vh 0;
 }
 .nav .anchors {
@@ -283,7 +282,7 @@ img {
 }
 .footer {
   width: 100%;
-  background: #de9151;
+  border-top: 1px solid #de9151;
 }
 .footer p {
   text-align: center;
@@ -292,7 +291,6 @@ img {
   padding: 20px;
 }
 .footer2 {
-  border-top: 1px solid #de9151;
   width: 100%;
 }
 .footer2 p {
@@ -300,6 +298,13 @@ img {
   color: white;
   font-size: 1.6rem;
   padding: 15px;
+}
+body {
+  background: #444545;
+  color: white;
+}
+.home {
+  color: white;
 }
 .home .content-section {
   display: flex;
@@ -531,7 +536,6 @@ button:hover {
 }
 .external2 {
   width: 100vw;
-  border-bottom: 1px solid #de9151;
   padding-top: 2.5em;
 }
 .nav2 {
@@ -620,8 +624,10 @@ button:hover {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: white;
   background-image: url(../img/about-bg.jpg);
+  color: white;
+  background-image: url(../img/boy-english.jpg);
+  background-repeat: repeat-y;
 }
 .body-about button {
   background: black;
@@ -640,12 +646,14 @@ button:hover {
   font-family: 'Special Elite', cursive;
 }
 .body-about .mid2 {
+  font-size: 0.7rem;
+  background: black;
+  opacity: 0.9;
   flex-grow: 2;
   display: flex;
   flex-direction: column;
-  padding: 3vh 10vw;
+  padding: 3vh 10vw 3vh 15vw;
   width: 100vw;
-  background: black;
   font-size: 0.8rem;
 }
 .body-about .mid2 h1,
@@ -653,7 +661,6 @@ button:hover {
   font-weight: 200;
 }
 .body-about .mid2 .full-size-blocks {
-  opacity: 0.2;
   padding-top: 2vh;
 }
 .body-about .mid2 button {
@@ -663,26 +670,67 @@ button:hover {
   width: 20vw;
   height: 3rem;
 }
+.body-about .mid2 .team {
+  background: #444545;
+  opacity: 0.9;
+  padding-top: 2vh;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+.body-about .mid2 .team .meet {
+  text-align: center;
+  text-transform: uppercase;
+}
+.body-about .mid2 .team .member {
+  background: unset;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: space-around;
+  padding: 0 2vw 2vh 0;
+}
+.body-about .mid2 .team .member img {
+  width: 12vw;
+  margin: 1vh 2vw 1VH 0;
+}
+.body-about .mid2 .team .member .bio {
+  margin: 1vh 2vw 1vh 3vw;
+}
+.body-about .mid2 .team .member2 {
+  background: unset;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 2vw 2vh 0;
+}
+.body-about .mid2 .team .member2 img {
+  width: 12vw;
+  margin: 1vh 0 1vh 3vw;
+}
+.body-about .mid2 .team .member2 .bio {
+  margin: 1vh 2vw 1vh 3vw;
+}
+@media (max-width:720px), (max-width: 500px) {
+  .team .member img,
+  .team .member2 img {
+    display: none;
+  }
+}
 .external2 {
   width: 100vw;
-  border-bottom: 1px solid #de9151;
   padding-top: 2.5em;
 }
 .nav2 {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 70vw;
-  width: 100%;
+  max-width: 80vw;
   margin: 0 auto;
   height: 7vh;
 }
 .nav2 .logo {
-  flex-grow: 3;
-  padding: 0 0 5vh 0;
+  flex-grow: 1;
+  width: 20vw;
 }
 .nav2 .anchors {
   flex-grow: 1;
-  justify-items: flex-end;
   line-height: 4em;
   display: flex;
   flex-wrap: nowrap;
@@ -690,7 +738,7 @@ button:hover {
 .nav2 .anchors a {
   flex-grow: 1;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
   font-size: 1.5em;
   color: white;
   font-weight: 300;
@@ -699,34 +747,34 @@ button:hover {
   body {
     width: 100vw;
   }
-  .body-vol .mid {
+  .body-about .mid {
     max-width: 80vw;
   }
-  .body-vol .mid .opening .intro-text {
+  .body-about .mid .opening .intro-text {
     max-width: 70vw;
   }
-  .body-vol .mid button {
+  .body-about .mid button {
     width: auto;
   }
-  .body-vol .nav2 {
+  .body-about .nav2 {
     width: 100%;
     margin: 0 auto;
     padding: 0 0 0 0;
     display: flex;
     flex-wrap: nowrap;
   }
-  .body-vol .nav2 .logo {
+  .body-about .nav2 .logo {
     flex-grow: 1;
     width: 100%;
     text-align: center;
     padding: 0 0;
   }
-  .body-vol .nav2 .anchors {
+  .body-about .nav2 .anchors {
     flex-grow: 1;
     width: 100%;
     text-align: center;
   }
-  .body-vol .nav2 .vis {
+  .body-about .nav2 .vis {
     display: none;
   }
 }
