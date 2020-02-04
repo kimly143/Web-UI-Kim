@@ -424,15 +424,15 @@ button:hover {
   body .external {
     width: 100%;
   }
+  .body-vol .nav2 .anchors .vis {
+    display: none;
+  }
   header .header-main-img {
     margin: 0 5vw;
   }
   header .header-text {
     width: 90vw;
     margin: 0 auto;
-  }
-  .container {
-    background-color: #de9151;
   }
   .container .home {
     width: 100%;
@@ -443,28 +443,27 @@ button:hover {
   .home .content-section {
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100vw;
-    margin: 2vh auto;
+    width: 90vw;
+    margin: 2vh 2vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .home .content-section .text-content,
   .home .content-section .img-content {
-    width: 94vw;
-    margin: 0 5vw;
+    width: 90vw;
+    margin: 5vw;
   }
   .home .inverse-content {
-    width: 100vw;
-    margin: vh auto;
+    width: 90vw;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
   }
   .home .inverse-content .text-content,
   .home .inverse-content .img-content {
-    width: 94vw;
-    margin: 0 5vw;
+    width: 90vw;
+    margin: 5vw;
   }
   .home .content-volunteer {
     width: 90vw;
@@ -604,7 +603,7 @@ button:hover {
   body {
     width: 100vw;
   }
-  .nav2 {
+  .nav2 .vis {
     display: none;
   }
   .nav2 button {
@@ -623,13 +622,13 @@ button:hover {
 body {
   background: black;
   opacity: 0.9;
+  background-image: url(../img/boy92.jpg);
 }
 .body-about {
   height: 100vh;
   display: flex;
   flex-direction: column;
   color: white;
-  background-image: url(../img/boy-english.jpg);
   background-repeat: repeat-y;
 }
 .body-about button {
@@ -676,11 +675,13 @@ body {
 .body-about .mid2 .team {
   background: #444545;
   opacity: 0.9;
-  padding-top: 2vh;
+  margin-top: 5vh;
+  padding: 2vh 7vw 2vh 7vw;
   color: white;
   text-shadow: 1px 1px black;
 }
 .body-about .mid2 .team .meet {
+  margin-top: 3vh;
   text-align: center;
   text-transform: uppercase;
 }
@@ -785,10 +786,10 @@ body {
   body {
     width: 100vw;
   }
-  .nav2 {
+  .nav2 .vis {
     display: none;
   }
-  .nav2 button {
+  .nav2 .vis button {
     width: auto;
   }
   body .mid {
