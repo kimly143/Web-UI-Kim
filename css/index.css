@@ -314,13 +314,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 30px 5vw;
   background: black;
 }
 .home .content-section .text-content {
-  width: 40%;
+  width: 43%;
   padding-right: 1%;
 }
 .home .content-section .img-content {
@@ -523,7 +523,10 @@ button:hover {
   .home .content-section .img-content img {
     display: none;
   }
-  .home .content-section .text-content {
+  .home .content-section {
+    width: 95%;
+  }
+  .home .text-content {
     width: 90vw;
     padding-right: 1%;
   }
