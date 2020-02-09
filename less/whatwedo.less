@@ -20,7 +20,7 @@ body{
     background: black;
     
     .text-content {
-      width: 48%;
+      width: 40%;
       padding-right: 1%;
     }
 
@@ -169,16 +169,13 @@ button:hover{
         margin: 0 auto;
       }
     }
-// .container{
-//   background-color: @persian-orange;
 
-// }  
-.container .home{
-  width: 100%;
-  .content-pick{
-  display: none;
-}
-}
+  .container .home{
+    width: 100%;
+    .content-pick{
+    display: none;
+    }
+  }
 
   .home .content-section{
     display: flex;
@@ -197,8 +194,8 @@ button:hover{
     p{
       margin: 5vw;
     }
+  }
 
-}
     .flexColNowrap();
     .text-content, .img-content{
       width: 90vw;
@@ -234,13 +231,27 @@ button:hover{
       margin: 1vh auto;
     }
   }
+@media @mobile{
+
   .home .content-section .text-content {
       width: 90vw;
-      //padding-right: 1%;
+  }
+  .home .content-section .text-content {
+    padding-top: 3vh;
+  }
+  .home .inverse-content .text-content {
+    padding-left: 0;
+  }
 }
-.home .content-section .text-content {
-  padding-top: 3vh;
+
+@media @tablet{
+  .home .content-section .img-content img {
+display: none;
 }
-.home .inverse-content .text-content {
-  padding-left: 0;
+.home .content-section 
+  width: 95%;
+  .text-content {
+  width: 90vw;
+  padding-right: 1%;
+}
 }
