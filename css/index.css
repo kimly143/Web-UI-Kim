@@ -264,20 +264,20 @@ img {
   font-weight: 300;
 }
 @media (max-width: 500px) {
-  .nav {
+  .nav2 {
     width: 100%;
     margin: 0 auto;
     padding: 0 0 0 0;
     display: flex;
     flex-wrap: nowrap;
   }
-  .nav .logo {
+  .nav2 .logo {
     flex-grow: 1;
     width: 100%;
     text-align: center;
     padding: 0 0;
   }
-  .nav .anchors {
+  .nav2 .anchors {
     flex-grow: 1;
     width: 100%;
     text-align: center;
@@ -432,6 +432,9 @@ button:hover {
     width: 100%;
     margin: 0 auto;
   }
+  body h2 {
+    font-size: 2rem;
+  }
   body .external {
     width: 100%;
   }
@@ -444,6 +447,7 @@ button:hover {
   header .header-text {
     width: 90vw;
     margin: 0 auto;
+    font-weight: 300;
   }
   .container .home {
     width: 100%;
@@ -511,6 +515,9 @@ button:hover {
   width: 90%;
   margin: 1vh auto;
 }
+h2 {
+  font-size: 2rem;
+}
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 90vw;
@@ -532,6 +539,9 @@ button:hover {
   .home .text-content {
     width: 90vw;
     padding-right: 1%;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 .body-vol {
@@ -816,6 +826,7 @@ body {
   }
   .body-about .nav2 {
     width: 100%;
+    font-size: 0.8rem;
     margin: 0 auto 2vh auto;
     padding: 0 0 0 0;
     display: flex;
@@ -836,15 +847,19 @@ body {
     display: none;
   }
 }
-@media (max-width:720px) {
+@media (max-width: 500px) and (max-width:720px) {
   body {
     width: 100vw;
+    font-size: 1rem;
   }
   .nav2 .vis {
     display: none;
   }
   .nav2 .vis button {
     width: auto;
+  }
+  .nav2 .vis .nav2 {
+    font-size: 0.8rem;
   }
   body .mid {
     max-width: 80vw;
