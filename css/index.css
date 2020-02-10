@@ -246,6 +246,9 @@ img {
   flex-grow: 2;
   padding: 0 0 5vh 0;
 }
+.nav .home .volunteer {
+  margin-bottom: 2vh;
+}
 .nav .anchors {
   flex-grow: 1;
   justify-items: flex-end;
@@ -584,7 +587,7 @@ button:hover {
   flex-wrap: nowrap;
   max-width: 70vw;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2vh auto;
   height: 7vh;
 }
 .nav2 .logo {
@@ -623,6 +626,7 @@ button:hover {
     width: 100%;
     margin: 0 auto;
     padding: 0 0 0 0;
+    margin: 0 auto 2vh auto;
     display: flex;
     flex-wrap: nowrap;
   }
@@ -770,13 +774,13 @@ body {
 }
 .external2 {
   width: 100vw;
-  padding-top: 2.5em;
+  padding-top: 2vh;
 }
 .nav2 {
   display: flex;
   flex-wrap: nowrap;
   max-width: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 2vh auto;
   height: 7vh;
 }
 .nav2 .logo {
@@ -812,7 +816,7 @@ body {
   }
   .body-about .nav2 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 2vh auto;
     padding: 0 0 0 0;
     display: flex;
     flex-wrap: nowrap;
